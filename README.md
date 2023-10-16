@@ -1,81 +1,36 @@
-# Customer Retention
+Customer Churn Analysis Project
 
-## 🔴 Detailed Session on EDA:
+## Project Overview
 
-[![Alt text](https://user-images.githubusercontent.com/34673684/117579611-49cd5880-b126-11eb-9e2b-ef865c090808.png)](https://www.youtube.com/watch?v=baL7OrGWlxs)
+The "Customer Churn Analysis" project aims to understand and predict customer churn for a business or organization. Customer churn, or attrition, refers to the situation where customers or subscribers stop doing business with a company, typically by canceling a service or discontinuing a subscription. Understanding and predicting customer churn is crucial for businesses, as it directly impacts revenue and customer retention.
 
-## 🔴 One of my previous Sessions on EDA, Model Building & Model Deployment: 
+## Project Goals
 
-[![Alt text](https://raw.githubusercontent.com/pik1989/MLProject-Churn-Analysis-And-Prediction-Model/main/images/CC.JPG)](https://www.youtube.com/watch?v=GVECbcKUio4)
+The primary goals of this project are as follows:
 
-## 🔴 What is Customer Churning ?
+1. **Data Collection:** Gather and organize customer data, which may include historical customer interactions, demographics, transaction history, and any relevant features that can help predict churn.
 
-![Customer Retention](https://raw.githubusercontent.com/pik1989/MLProject-Churn-Analysis-And-Prediction-Model/main/images/Telco1.JPG)
+2. **Data Preprocessing:** Clean and preprocess the data, handling missing values, and encoding categorical variables. Perform exploratory data analysis (EDA) to gain insights into the data.
 
-## 🔴 What are the different Churn Scenarios ?
+3. **Feature Selection and Engineering:** Identify and create relevant features that may be indicative of customer churn. Feature engineering might involve aggregating transaction data, calculating customer lifetime value, or creating customer segments.
 
-![Churn Scenarios](https://raw.githubusercontent.com/pik1989/MLProject-Churn-Analysis-And-Prediction-Model/main/images/Telco2.JPG)
+4. **Model Building:** Implement and evaluate machine learning models for customer churn prediction. Experiment with various classification algorithms, such as logistic regression, decision trees, random forests, support vector machines, and neural networks.
 
-## 🔴 Decision Cycle of a Subscriber ?
+5. **Model Evaluation:** Assess the performance of the models using appropriate evaluation metrics, including accuracy, precision, recall, F1-score, and ROC-AUC, depending on the problem's characteristics.
 
-![Decision Cycle](https://raw.githubusercontent.com/pik1989/MLProject-Churn-Analysis-And-Prediction-Model/main/images/Telco3.JPG)
+6. **Feature Importance:** Analyze feature importance to understand which customer attributes are most influential in predicting churn.
 
-## 🔴 What are the different Churn Segments ?
+7. **Model Interpretability:** Ensure that the models are interpretable to make actionable business decisions. Use techniques like SHAP values or feature importance visualization.
 
-![Churn Segments](https://raw.githubusercontent.com/pik1989/MLProject-Churn-Analysis-And-Prediction-Model/main/images/Telco4.JPG)
+8. **Deployment:** Deploy the best-performing model in a business environment, where it can be used for real-time or batch churn prediction.
 
-## 🔴 Solution Overview
+9. **Recommendations:** Provide actionable insights and recommendations for reducing churn. Identify strategies to retain customers, such as targeted marketing campaigns or personalized offers.
 
-![Solution](https://raw.githubusercontent.com/pik1989/MLProject-Churn-Analysis-And-Prediction-Model/main/images/Telco5.JPG)
+## Target Audience
 
+This project is relevant for businesses across various industries, including subscription services, telecommunications, e-commerce, and finance. It is intended for data scientists, analysts, and business stakeholders interested in understanding customer behavior and taking proactive measures to reduce customer churn.
 
-In this repository, we have performed the end to end Exploratory Data Analysis, and idenfitied the characteristics of the customers that are more likely to churn, and I have used them wisely to create a model, and lately, have deployed the model.
+## Data Sources
 
-### 🟢 For EDA, please refer to : Churn Analysis - EDA.ipynb
-### 🟢 For Model Building, please refer to: Churn Analysis - Model Building.ipynb
-### 🟢 For Model Deployment, please refer to app.py
+The project may use internal business data, which could include customer databases, transaction logs, and customer support interactions. Additionally, publicly available datasets related to customer churn, such as the Telco Customer Churn dataset, may be used for practice and analysis.
 
-
-### 🔵 Creating the flask API
-
-```
-app = Flask("__name__")
-```
-
-The loadPage method calls our home.html.
-```
-@app.route("/")
-def loadPage():
-	return render_template('home.html', query="")
-```
-
-The predict method is our POST method, which is basically called when we pass all the inputs from our front end and click SUBMIT.
-```
-@app.route("/", methods=['POST'])
-def predict():
-```
-  
-The run() method of Flask class runs the application on the local development server.
-```
-app.run()
-```
-
-
-Yay, our model is ready, let’s test our bot.
-The above given Python script is executed from Python shell.
-
-Go to Anaconda Prompt, and run the below query.
-```
-python app.py
-```
-
-
-Below message in Python shell is seen, which indicates that our App is now hosted at http://127.0.0.1:5000/ or localhost:5000
-```
-* Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-```
-
-
-HERE'S HOW OUR FRONTEND LOOKS LIKE:
-
-![Customer Retention](https://raw.githubusercontent.com/pik1989/MLProject-Churn-Analysis-And-Prediction-Model/main/images/Telco6.JPG)
